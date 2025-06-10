@@ -558,7 +558,7 @@ header ul a:hover{
     box-shadow: 0 0 7px whitesmoke;
     padding: 20px;
     max-height: 160px;
-    min-height: 140px;
+    min-height: 160px;
 }
 
 .tech-cards h1{
@@ -1596,6 +1596,11 @@ footer{
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 700px){
+    .container {
+        max-width: 400px;
+        min-width: 400px;
+    }
+
     .fadeInRight {
         animation: none;
         opacity: 1;
@@ -1631,6 +1636,15 @@ footer{
     }
 
     /* HERO */
+    .hero {
+        max-height: 600px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .robot-3d{
         scale: 0.4;
         top: -25%;
@@ -1638,6 +1652,8 @@ footer{
 
     .hero-info{
         margin-top: 60%;
+        scale: 0.8;
+        margin-bottom: 70px;
     }
 
     .hero-info-title{
@@ -1659,7 +1675,7 @@ footer{
     }
 
     .scroll-down{
-        scale: 0.6;
+        display: flex;
     }
 
     /* ABOUT */
@@ -1674,7 +1690,10 @@ footer{
     }
 
     .card img{
-        scale: 0.6;
+        position: absolute;
+        top: -10%;
+        width: 230px;
+        height: 230px;
     }
 
     .card h1{
@@ -1685,14 +1704,20 @@ footer{
         font-size: 11px;
     }
 
-    .card:nth-child(1){
+    .card:nth-child(1) {
         grid-row: span auto;
         grid-column: span 2;
-        height: 80vh;
+        height: 100vh;
+        max-height: 500px;
+        min-height: 500px;
+    }
+
+    .card:nth-child(1) h1{
+        top: 37%;
     }
 
     .card:nth-child(1) p{
-        bottom: 55%;
+        top: 40%;
     }
     
 
@@ -1703,7 +1728,9 @@ footer{
     .card:nth-child(2){
         grid-row: span auto;
         grid-column: span 2;
-        height: 30vh;
+        height: 100vh;
+        max-height: 180px;
+        min-height: 180px;
     }
 
     .card:nth-child(2) h1{
@@ -1717,7 +1744,9 @@ footer{
     .card:nth-child(3){
         grid-row: span auto;
         grid-column: span 2;
-        height: 30vh;
+        height: 100vh;
+        max-height: 180px;
+        min-height: 180px;
     }
 
     .card:nth-child(3) h1{
@@ -1731,7 +1760,9 @@ footer{
     .card:nth-child(4){
         grid-row: span auto;
         grid-column: span 2;
-        height: 75vh;
+        height: 100vh;
+        max-height: 450px;
+        min-height: 450px;
     }
 
     .card:nth-child(4) h1{
@@ -1745,7 +1776,13 @@ footer{
     /* EXPERTISE */
     .skills-section{
         margin-top: -30px;
-        max-width: auto;
+        max-width: 610px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 1000px;
+        min-height: 1000px;
     }
 
     .skills-section p{
@@ -1753,7 +1790,9 @@ footer{
     }
 
     .skill {
-        height: 20vh;
+        height: 100vh;
+        min-height: 120px;
+        max-height: 120px;
     }
 
     .skill i{
@@ -1768,10 +1807,7 @@ footer{
     }
 
     .tech-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
 
     .tech-cards h1{
@@ -1793,6 +1829,12 @@ footer{
 
 
     /* PROJECTS */
+    .my-projects {
+        max-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .my-projects p{
         font-size: 12px;
         /* height: 40vh; */
@@ -1809,11 +1851,21 @@ footer{
         justify-content: center;
         margin-top: 30px;
         margin-bottom: 20px;
+        max-width: 300px;
+        min-width: 300px;
     }
 
     .project-vidbox{
         top: -20%;
         margin-left: 100%;
+    }
+    
+    .project-info {
+        width: 600px;
+        margin-right: -190%;
+        height: 100vh;
+        max-height: 500px;
+        min-height: 500px;
     }
 
     .project-info h1{
@@ -1827,7 +1879,7 @@ footer{
         display: block;
         width: 400px;
         /* scale: 1.15; */
-        font-size: 12px;
+        font-size: 18px;
         text-wrap: wrap;
     }
 
@@ -1907,7 +1959,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 25%;
+        margin-left: 35%;
         scale: 0.75;
     }
 
@@ -1922,7 +1974,7 @@ footer{
     .message-cards{
         margin-top: -10%;
         scale: 0.85;
-        margin-left: 32%;
+        margin-left: 40%;
         height: 85vh;
         display: flex;
     }
